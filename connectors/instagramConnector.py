@@ -76,9 +76,8 @@ def fetch_user_all_posts(slug, user_id, offset, posts):
     posts += [x["node"] for x in response["edges"]]
     # Loop until there is no more page to download
     if response["page_info"]["has_next_page"] == True:
-        logger.info(len(posts))
+        logger.debug("{}/{}".format(len(posts), response["count"]))
         # Random sleep between each request to instagram's API
         time.sleep(randint(conf.REQUEST_SLEEP_RANGE[0], conf.REQUEST_SLEEP_RANGE[1]))
         return fetch_user_all_posts(slug, user_id, offset, posts)
-    else:
-        return posts
+    return posts

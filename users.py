@@ -1,6 +1,6 @@
 from connectors.instagramConnector import fetch_user_all_posts
-from utils.cache import persist_cache, retrieve_cache
 from utils.log import logger
+from utils.utils import persist_cache, retrieve_cache
 
 
 def get_all_users_posts(accounts):

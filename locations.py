@@ -4,8 +4,8 @@ from random import randint
 
 import utils.config as conf
 from connectors.instagramConnector import fetch_one_location
-from utils.cache import persist_cache, retrieve_cache
 from utils.log import logger
+from utils.utils import persist_cache, retrieve_cache
 
 
 def get_new_locations_info(locations, cache):

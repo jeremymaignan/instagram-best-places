@@ -1,8 +1,18 @@
+import csv
 import os
 import pickle
 
 import utils.config as conf
 
+
+def write_csv(filename, data, sort_by=None):
+    if sort_by:
+        data = sorted(data, key=lambda x: x[sort_by], reverse=True)
+    keys = data[0].keys()
+    with open('{}.csv'.format(filename), 'w', newline='')  as output_file:
+        dict_writer = csv.DictWriter(output_file, keys, delimiter=';')
+        dict_writer.writeheader()
+        dict_writer.writerows(data)
 
 def create_folder(path):
     if not os.path.exists(path):

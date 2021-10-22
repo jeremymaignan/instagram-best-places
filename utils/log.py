@@ -13,3 +13,4 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(name)s - %(funcName)s - %(message)s'
 )
 logger = logging.getLogger()
+logging.getLogger("requests").setLevel(logging.WARNING)
