@@ -3,9 +3,9 @@
     "cookie": "",
     "query_hash": "",
     "posts_per_page": 50,
-    "minimum_location_visits": 5,
+    "minimum_location_visits": 4,
     "cache_folder": "./cache",
-    "request_sleep_range": [10, 30],
+    "request_sleep_range": [30, 60],
     "accounts": [
         ["hilonagos_off", "263500569"],
         ["yamina.niya", "256101842"],
@@ -61,6 +61,12 @@
         ["ayemnour", "227497405"],
         ["noholita", "3171067"],
         ["aurelievandaelen", "12930080"],
+        ["lilataleb_off", "3050188386"],
+        ["rania_off", "563433306"],
+        ["leslie_dasc", "418002206"],
+        ["sarah_martins_official", "666333915"],
+        ["manuecureau", "321380926"],
+        ["tressiab", "1721781091"],
 
         ["wendyswan", "25288085"],
         ["amandinepetitoff", "2057504203"],
@@ -120,6 +126,19 @@
         ["manonlaime", "201050631"],
         ["looknatamelie", "227284585"],
         ["lola_rossi_", "467163157"],
+        ["meganvlt", "212945208"],
+        ["dorisblancpin", "17808594"],
+        ["junesixtyfive", "1402017683"],
+        ["sophiesinacori", "10615794"],
+        ["shera", "11277127"],
+        ["eliseheb", "843436335"],
+        ["chlosertoyou", "3600581710"],
+        ["jenna.mzn", "1477191141"],
+        ["mcg____", "143766437"],
+        ["laurawarrand", "276453179"],
+        ["morgane.adt", "352581553"],
+        ["healthylifemary", "339398066"],
+        ["mummychamallow", "804926299"],
 
         ["jessicaaidi", "25043921"],
         ["fanny.neguesha", "49617407908"],
@@ -159,7 +178,7 @@
         ["francesca.antoniotti", "3252348144"],
         ["laureboulleauofficiel", "1462295541"]
     ],
-    "restaurant_categories": ["Bakery", "Pizza Place", "Coffee Shop", "Tea Room", "Brewery", "Cocktail Bar", "Food & Beverage"],
+    "restaurant_categories": ["Fast food", "Bakery", "Pizza Place", "Coffee Shop", "Tea Room", "Brewery", "Cocktail Bar", "Food & Beverage", "Bar", "Bar & Grill", "Glacier", "Pub"],
     "hotel_categories": ["Hotel", "Hotel Resort", "Complexe hôtelier", "Hotel & Lodging", "Hostel"],
     "category_translations": {
         "Ville": "City",
@@ -177,6 +196,7 @@
         "jardin": "Garden",
         "Jardin public": "Garden",
         "garden": "Garden",
+        "Jardin botanique": "Botanical Garden",
         "Pont": "Bridge",
         "Parc": "Park",
         "Parc national": "National Park",
@@ -271,6 +291,14 @@
         "Site web de divertissement": "Entertainment Website",
         "Agence de voyages": "Travel Agency",
         "Agence de voyage": "Travel Agency",
-        "Golf et Country Club": "Golf Course & Country Club"
+        "Golf et Country Club": "Golf Course & Country Club",
+        "Centre d’intérêt": "Interest",
+        "Fuseau horaire": "Time zone",
+        "Juste pour le plaisir": "Just For Fun",
+        "Lieu de spectacles et de tenue d’évènements": "Performance & Event Venue",
+        "Organisation religieuse": "Religious Organization",
+        "Réserve naturelle": "Nature Preserve",
+        "Quartier commerçant": "Shopping District",
+        "Landmark & Historical Place": "Landmark & Historical Place"
     }
 }
