@@ -35,9 +35,12 @@ def parse_locations(posts):
     Save data in a dict and count the number of posts for each location
     """
     locations = defaultdict(int)
+    posts_with_location = 0
     for post in posts:
         # Ignore posts without location
         if not post["location"]:
             continue
         locations[post["location"]['id']] += 1
+        posts_with_location += 1
+    logger.debug("{} posts have a location tagged".format(posts_with_location))
     return locations

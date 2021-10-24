@@ -3,6 +3,7 @@ import os
 import pickle
 
 import utils.config as conf
+from utils.log import logger
 
 
 def write_csv(filename, data, sort_by=None):
@@ -31,4 +32,4 @@ def persist_cache(filename, data):
         create_folder(conf.CACHE_FOLDER)
     with open('{}/{}'.format(conf.CACHE_FOLDER, filename), "wb") as f:
         pickle.dump(data, f)
-        print("{} saved in cache".format(filename))
+        logger.info("{} saved in cache".format(filename))

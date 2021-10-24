@@ -4,6 +4,9 @@ import sys
 
 import utils.config as conf
 
+
+logging.getLogger("requests").setLevel(logging.CRITICAL)
+
 """
 Create logger with specific format
 Log level set in conf or env
@@ -13,4 +16,3 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(name)s - %(funcName)s - %(message)s'
 )
 logger = logging.getLogger()
-logging.getLogger("requests").setLevel(logging.WARNING)
